@@ -1,1 +1,1 @@
-# JamesJ.github.io
+# jamesj.github.io
