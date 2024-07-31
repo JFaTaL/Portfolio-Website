@@ -10,6 +10,7 @@
     --bg-color: #1d2b5a;
     --primary-color: #ffffff;
     --secondary-color: #000000;
+    --secondary-text: #d4d3d3;
     --hover-color: #5a7ffb;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
@@ -56,6 +57,9 @@ nav, .nav-links {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
+    background: scroll;
+    background-color: rgba(9, 17, 45, 0.5);
+    backdrop-filter: blur(5px);
   }
   
   .nav-links {
@@ -163,3 +167,122 @@ nav, .nav-links {
   .hamburger-icon span:first-child{
     transform: none;
   }
+
+  /* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display:flex;
+}
+
+/* PROFILE SECTIONS */
+
+#profile {
+  display:flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.profile-pic {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin: auto 0;
+  border-radius: 10rem;
+}
+
+.profile-pic img{
+  border-radius: 15rem;
+}
+
+.profile-text {
+  align-self: center;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.section__text p {
+  font-weight: 600;
+}
+
+.profile-text-1 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--secondary-text)
+}
+
+.profile-text-2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color:var(--secondary-text)
+}
+
+.profile-text-title {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+}
+
+/* BUTTONS */
+
+.profile-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: var(--hover-color);
+  color: white;
+}
+
+.btn-color-1:hover{
+  background: var(--bg-color);
+}
+
+.btn-color-2{
+  background: var(--primary-color);
+}
+
+.profile-buttons{
+  gap: 1rem;
+}

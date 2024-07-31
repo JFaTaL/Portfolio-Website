@@ -5,45 +5,65 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>James Julian | Portfolio</title>
-        <!--CSS Styles-->
+        <!-- CSS Styles -->
         <link rel="stylesheet" href="/css/styles.css" />
         <link rel="stylesheet" href="/css/mediaqueries.css" />
         <script src="/js/burgermenu.js"></script>
-        <!--icon-->
-        <link 
-            rel="icon"
-            sizes="192x192" 
-            href="assets/logo-192x192.png"
-        />
+        <!-- Icon -->
+        <link rel="icon" sizes="192x192" href="assets/logo-192x192.png" />
     </head>
     <body>
-    <!-- Desktop Navbar -->
-    <nav id="desktop-nav">
-        <div class="logo">James Julian</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        <!-- Desktop Navbar -->
+        <nav id="desktop-nav">
+            <div class="logo">James Julian</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <nav id="hamburger-nav">
-        <div class="logo">James Julian</div>
-        <div class="hamburger-link"></div>
-        <div class="hamburger-icon" onClick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onClick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
-    
-        </div>
-    </div>
-    </nav>
+        <!-- Hamburger Navbar -->
+        <nav id="hamburger-nav">
+            <div class="logo">James Julian</div>
+            <div class="hamburger-link"></div>
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onClick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
+            </div>
+        </nav>
+
+        <section id="profile">
+            <div class="profile-pic">
+                <img src="/assets/profile-pic.png" alt="James Julian Animated Profile Pic">
+            </div>
+            <div class="profile-text">
+                <p class="profile-text-1">Hello I'm</p>
+                <h1 class="profile-text-title">James Julian</h1>
+                <p class="profile-text-2">Fullstack Software Developer</p>
+                <div class="profile-buttons">
+                    <button class = "btn btn-color-1" onClick="window.open('./assets/james-resume.pdf')">Download CV</button>
+                    <button class="btn btn-color-2" onClick="location.href='./#contact'">Contact Me</button>
+                </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/james--julian/" target="_blank">
+                        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
+                    </a>
+                    <a href="https://github.com/JFaTaL" target="_blank">
+                        <img src="./assets/github.png" alt="My Github profile" class="icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
