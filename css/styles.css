@@ -171,11 +171,13 @@ nav, .nav-links {
   /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 11vh;
+  min-height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  margin-bottom: 4rem;
+  
 }
 
 .section-container {
@@ -279,10 +281,99 @@ section {
   background: var(--bg-color);
 }
 
+.btn-color-2:hover{
+  background: var(--bg-color);
+}
+
 .btn-color-2{
   background: var(--primary-color);
 }
 
 .profile-buttons{
   gap: 1rem;
+}
+
+/* ABOUT SECTIONS */
+#about {
+  position: relative;
+}
+
+.title {
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  padding-top: 0.7rem;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+
+.details-container {
+  padding: 1rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.text-container {
+color: var(--primary-color);
+}
+
+.skills-container {
+  text-align: center;
+  padding: 1rem;
+  flex: 1;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.skill-icon-container {
+  background: var(--primary-color); /* Adjust the background color as needed */
+  padding: 1rem;
+  border-radius: 1rem; /* Optional: for rounded corners */
+}
+
+.skill-icon {
+  width: 75px; 
+  height: 75px; 
+  display: block; 
+  margin: auto; 
 }
