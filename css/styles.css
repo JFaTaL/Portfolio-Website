@@ -220,6 +220,7 @@ section {
 .profile-text-1 {
   text-align: center;
   font-size: 1.25rem;
+  height: 1.9rem;
   color: var(--secondary-text)
 }
 
@@ -486,4 +487,9 @@ color: var(--primary-color);
 .footer-text {
   color: var(--primary-color);
   text-align: center;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 1rem;
 }

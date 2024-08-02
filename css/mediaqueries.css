@@ -44,8 +44,8 @@
       margin-bottom: 1rem; 
   }
 
-  .profile-pic {
-      margin: 0 auto;
+  .profile-text{
+    margin-top: 2rem;
   }
 
   .project-details-container {
