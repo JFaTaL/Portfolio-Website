@@ -171,7 +171,7 @@ nav, .nav-links {
   /* SECTIONS */
 
 section {
-  padding-top: 11vh;
+  padding-top: 10vh;
   min-height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -189,6 +189,7 @@ section {
 #profile {
   display:flex;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
   height: 80vh;
 }
@@ -366,9 +367,9 @@ color: var(--primary-color);
 }
 
 .skill-icon-container {
-  background: var(--primary-color); /* Adjust the background color as needed */
+  background: var(--primary-color); 
   padding: 1rem;
-  border-radius: 1rem; /* Optional: for rounded corners */
+  border-radius: 1rem; 
 }
 
 .skill-icon {
@@ -376,4 +377,124 @@ color: var(--primary-color);
   height: 75px; 
   display: block; 
   margin: auto; 
+}
+
+/* PROJECTS SECTIONS */
+#projects {
+  position: relative;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.color-container {
+  border-color: black;
+  background: rgb(255, 255, 255);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 70%;
+  height: 70%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+.project-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+.project-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight:  600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  margin-top: 2rem;
+  color: var(--primary-color);
+}
+
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: var(--bg-color);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: 2px outset var(--bg-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--bg-color);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--bg-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer-text {
+  color: var(--primary-color);
+  text-align: center;
 }

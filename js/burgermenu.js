@@ -5,3 +5,7 @@ function toggleMenu() {
     icon.classList.toggle('open');
   
   }
+
+  function scrollToTop() {
+    window.scrollTo(0,0);
+  }
