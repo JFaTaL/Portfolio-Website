@@ -9,3 +9,18 @@ function toggleMenu() {
   function scrollToTop() {
     window.scrollTo(0,0);
   }
+
+  function scrollToProject() {
+    const targetElement = document.getElementById('projects');
+
+    if (targetElement) {
+        // Calculate the dynamic offset
+        const headerHeight = document.querySelector('nav').offsetHeight;
+        const offset = headerHeight + 10; 
+
+        window.scrollTo({
+            top: targetElement.offsetTop - offset,
+            behavior: 'smooth'
+        });
+    }
+}
