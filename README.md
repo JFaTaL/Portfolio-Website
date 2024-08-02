@@ -1,4 +1,4 @@
-# jamesj.github.io
+# [James-J.dev](https://james-j.dev/)
 Welcome to my portfolio repository! Here you'll find a collection of my projects showcasing my skills and experience in software development.
 
 ## About Me
